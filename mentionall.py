@@ -37,12 +37,12 @@ async def start(event):
   await event.reply("**Tagger botu**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/SessiztaggerBot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/etikettaggerBot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Grubumuz', 'https://t.me/HerlockSupport1'),
-                         Button.url('👨🏼‍💻Developer', 'https://t.me/SakirBey2'),
-                         Button.url('🙋Sahibim', 'https://t.me/sessizlerkurucu'),
+                         Button.url('📣 Grubumuz', 'https://t.me/etikettagSupport'),
+                         Button.url('👨🏼‍💻instagram', 'https://instagram.com/k5mando'),
+                         Button.url('🙋Sahibim', 'https://t.me/mkaofc'),
                       ]
                     ),
                     link_preview=False
@@ -53,12 +53,12 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/SessiztaggerBot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/etikettaggerBot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Grubumuz', 'https://t.me/HerlockSupport1'),
-                         Button.url('👨🏼‍💻Developer', 'https://t.me/SakirBey2'),
-                         Button.url('🙋🏻‍♂️Sahibim', 'https://t.me/sessizlerkurucu'),
+                         Button.url('📣 Grubumuz', 'https://t.me/etikettagSupport'),
+                         Button.url('👨🏼‍💻instagram', 'https://instagram.com/k5mando'),
+                         Button.url('🙋🏻‍♂️Sahibim', 'https://t.me/mkaofc'),
                       ]
                     ),
                     link_preview=False
@@ -98,7 +98,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @SakirBey1 İle iletişime Geçin...**")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @mkaofc İle iletişime Geçin...**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -116,7 +116,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @SakirBey1 İle iletişime Geçin...**")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @mkaofc İle iletişime Geçin...**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -158,7 +158,7 @@ async def etag(event):
       usrnum += 1
       usrtxt += f"[{random.choice(cumle)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @SakirBey1 İle iletişime Geçin...**")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @mkaofc İle iletişime Geçin...**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -176,7 +176,7 @@ async def etag(event):
       usrnum += 1
       usrtxt += f"[{random.choice(cumle)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @SakirBey1 İle iletişime Geçin...**")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @mkaofc İle iletişime Geçin...**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -218,7 +218,7 @@ async def nick(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emj)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @SakirBey1 İle iletişime Geçin...**")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @mkaofc İle iletişime Geçin...**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -236,7 +236,7 @@ async def nick(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emj)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @SakirBey1 İle iletişime Geçin...**")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ** Daha Fazla Grub Botları İçin @mkaofc İle iletişime Geçin...**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
